@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Nova+Square&family=Poppins:wght@600&display=swap');
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 1.5rem;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  .nav a{
+    text-decoration: none;
+  }
+  .brand {
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 1rem;
+    font-weight: bolder;
+  }
+  .brand span:first-child {
+    color: #000000;
+  }
+  .brand span:nth-child(2) {
+    color: #000aff;
+  }
+  .nav span {
+    font-weight: 600;
+    color: #000000;
+  }
+  .options a:last-child span {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 0.1rem 0.8rem;
+    border-radius: 15px;
+    border: 1px solid #000aff;
+    color: #000aff;
+    gap:0.5rem;
+  }
+  .options {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+  }
+  

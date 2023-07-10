@@ -1,0 +1,88 @@
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.vector {
+    filter: blur(80px);
+    position: absolute;
+    bottom: -3rem;
+    right: -5rem;
+}
+
+.vector1 {
+    fill: #6a70fc;
+    filter: blur(75px);
+    position: absolute;
+    left: 0;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    color: #616161;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 50vh;
+}
+
+.content div:first-child {
+    color: #434343;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 80%;
+}
+.content div:first-child p {
+    margin: 0;
+}
+
+.content div:first-child p:nth-child(2) {
+    font-weight: bolder;
+    color: #000000;
+}
+.content div:nth-child(2){
+    width: 80%;
+}
+.highlight{
+    color:#000000;
+    font-weight: bolder;
+}
+.links>a{
+    display: flex;
+    width: 413px;
+    padding: 10px 0px 10px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #000AFF;
+    color:#FFFFFF;
+    text-decoration: none;
+    border-radius: 15px;
+}
+.links p a{
+    color:black;
+    font-weight: 500;
+    text-decoration: none;
+}
+.links p span{
+    border-bottom: 1px solid black;
+}
