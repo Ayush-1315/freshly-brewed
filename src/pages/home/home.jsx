@@ -76,7 +76,7 @@ export const Home = () => {
           </p>
         </div>
         <div className={home.links}> 
-            <Link> Join our Program</Link>
+            <Link to="/signup"> Join our Program</Link>
             <p>Already a member? <span><Link>Login</Link></span></p>
         </div>
       </div>
