@@ -8,9 +8,9 @@ export const Signup=()=>{
     const navigate=useNavigate();
     const onSubmit=(data)=>{
         setSignUpData(data)
-        console.log(signUpData);
         navigate('/signup-details')
     }
+    console.log(signUpData);
     return <div>
         <div className="background">
         </div>

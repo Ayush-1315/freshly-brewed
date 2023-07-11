@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { roles } from "../../db/roles";
 import linkedin from "../../assets/LinkedinLogo.svg";
 import signupCSS from "./signup.module.css";
+import drop from "../../assets/drop.svg";
 import { useState } from "react";
 
 export const SignupForm = ({onSubmit}) => {
@@ -40,6 +41,7 @@ export const SignupForm = ({onSubmit}) => {
         window.alert("Please fill all fields");
     }
   };
+  const [showDrop,setShowDrop]=useState(false);
   return (
     <div className={signupCSS.formContainer}>
       <form onSubmit={submitHandler}>
@@ -51,7 +53,7 @@ export const SignupForm = ({onSubmit}) => {
               Login
             </Link>
           </p>
-          <div>
+          <div className={signupCSS.nameContainer}>
             <div>
               <label htmlFor="fName">First Name</label>
               <input
@@ -79,7 +81,7 @@ export const SignupForm = ({onSubmit}) => {
             onChange={(e) => changeHandler("email", e.target.value)}
           />
           <label htmlFor="currentJob">Current Job Role</label>
-          <select
+          {/* <select
             name="currentJob"
             id="currentJob"
             defaultValue={formData.currJob}
@@ -93,7 +95,29 @@ export const SignupForm = ({onSubmit}) => {
                 {role}
               </option>
             ))}
-          </select>
+          </select> */}
+          <div
+            className={signupCSS.dropInput}
+            onClick={() => setShowDrop(!showDrop)}
+          >
+            <span>
+              {formData.currJob === "" ? "Select" : formData.currJob}
+            </span>
+            <img src={drop} alt="drop-icon" />
+            {showDrop && (
+              <div className={signupCSS.options}>
+                {roles.map((role, index) => (
+                  <p
+                    className={signupCSS.option}
+                    key={index}
+                    onClick={() => changeHandler("currJob", role)}
+                  >
+                    {role}
+                  </p>
+                ))}
+              </div>
+            )}
+          </div>
           <label htmlFor="password">Set Password</label>
           <input
             type="password"
