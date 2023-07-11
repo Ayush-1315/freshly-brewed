@@ -1,11 +1,17 @@
+import { useState } from "react";
 import { PersonalDetailsForm } from "../../components/personalDetails/personalDetailsForm";
 
 export const SignUpDetails = () => {
-  return (
+  const [userDetails,setUserDetails]=useState(null);
+  const onSubmit=(data)=>{
+    setUserDetails(data);
+  };
+  console.log(userDetails)
+    return (
     <div>
       <div className="background"></div>
       <div>
-        <PersonalDetailsForm />
+        <PersonalDetailsForm onSubmit={onSubmit}/>
       </div>
     </div>
   );

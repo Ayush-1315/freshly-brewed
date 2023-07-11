@@ -20,3 +20,12 @@
   cursor: pointer;
   height:2rem;
 }
+.css-1qes3pk-MuiStack-root{
+  width:100%;
+}
+.css-nxo287-MuiInputBase-input-MuiOutlinedInput-input{
+  padding:0.5rem !important;
+}
+.css-1yq5fb3-MuiButtonBase-root-MuiIconButton-root{
+  padding:0 0.5rem !important;
+}

@@ -1,0 +1,1 @@
+export const educationLevel=['Secondary Education','Graduate','Post-Graduate','Diploma']

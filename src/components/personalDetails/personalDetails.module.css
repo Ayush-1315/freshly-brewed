@@ -6,23 +6,35 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 70vh;
+    min-height: 70vh;
     text-align: left;
     padding: 1rem;
     background-color: white;
 }
-
+.form form>label{
+    display: block;
+    margin-top:0.5rem ;
+}
 .header h1 {
     color: black;
     margin-top: 0;
 }
-
+.form form>button{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    padding: 0.4rem;
+    border:none;
+    background-color: #000AFF;
+    color:#FFFFFF;
+    border-radius: 8px;
+}
 .header p {
     font-size: 0.8rem;
 }
 
 .dropInput {
-    padding: 0.5rem;
+    padding: 0.3rem;
     border-radius: 8px;
     border: 1px solid #D2D2D2;
     font-size: 1rem;
@@ -32,6 +44,7 @@
     position: relative;
 }
 .options{
+    border:1px solid grey;
     position: absolute;
     width: 100%;
     height: 15vh;
@@ -39,6 +52,7 @@
     left:0;
     overflow-y: auto;
     background-color: white;
+    z-index: 2;
 }
 .option{
     padding:0.5rem;
@@ -46,4 +60,37 @@
 }
 .option:hover{
     background-color: #edebeb;
+}
+.interviewOptions{
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.interviewOptions label{
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+.footer{
+    text-align: center;
+}
+.footer button{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #888;
+border-radius: 8px;
+border: 1px solid #B6B6B6;
+background: #FFF;
+cursor: pointer;
+}
+.formContainer>p{
+    margin: 1rem 0 0 0;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.formContainer>p a{
+text-decoration: none;
+color: black;
+border-bottom: 1px solid;
 }
