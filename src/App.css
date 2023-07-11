@@ -10,3 +10,13 @@
     z-index: -1;
     bottom: 0;
 }
+::-webkit-scrollbar{
+  background-color: white;
+  width:8px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #5757579d;
+  border-radius: 10rem;
+  cursor: pointer;
+  height:2rem;
+}
