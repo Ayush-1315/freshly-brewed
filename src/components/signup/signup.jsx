@@ -47,7 +47,7 @@ export const SignupForm = ({onSubmit}) => {
           <h1>SignUp</h1>
           <p>
             Already a member?{" "}
-            <Link className={`${signupCSS.links} ${signupCSS.login}`}>
+            <Link className={`${signupCSS.links} ${signupCSS.login}`} to="/signin">
               Login
             </Link>
           </p>

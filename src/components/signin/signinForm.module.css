@@ -1,0 +1,85 @@
+.formContainer {
+    color: #909090;
+    width: 25%;
+    margin: 1rem auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70vh;
+    text-align: left;
+    padding: 1rem;
+    background-color: white;
+}
+
+.formContainer h1 {
+    color: black;
+    margin-top: 0;
+}
+
+.formContainer label {
+    display: block;
+}
+.formContainer>div:first-child p a{
+    text-decoration: none;
+    color: #4A51FA;
+    font-weight: 400;
+    border-bottom: 1px solid #4A51FA;
+}
+.password {
+    letter-spacing: 3px;
+    color: #616161;
+}
+
+.formContainer .btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+    margin: 1rem 0.4rem;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid #B6B6B6;
+    background: #FFF;
+    color: #888;
+    font-weight: 400;
+    gap: 0.5rem;
+}
+
+.formContainer input {
+    display: block;
+    width: 98%;
+    padding: 0.4rem 0.3rem;
+    border-radius: 8px;
+    border: 1px solid #D2D2D2;
+    margin-bottom: 1rem;
+}
+
+.continueBtn {
+    background-color: #000AFF;
+    color: white;
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    padding: 0.4rem;
+    margin: 1.5rem 0;
+    cursor: pointer;
+    border: none;
+}
+
+.loginOptions p {
+    text-align: center;
+}
+.formContainer>p{
+    text-align: center;
+    font-size: 0.8rem;
+}
+.formContainer>p a{
+    text-decoration: none;
+    color:black;
+    border-bottom: 1px solid;
+}
