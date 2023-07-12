@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import home from "./home.module.css";
 
 export const Home = () => {
+  document.title="LeanPrep | Home"
   return (
     <div>
       <div className={home.background}>

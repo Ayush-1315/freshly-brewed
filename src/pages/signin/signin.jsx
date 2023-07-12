@@ -2,6 +2,7 @@ import { useState } from "react";
 import { SigninForm } from "../../components/signin/signinForm";
 
 export const SignIn = () => {
+  document.title="LeanPrep | Sign In"
     const [signInData,setSignInData]=useState(null);
     const onSubmit=(data)=>{
         setSignInData(data);

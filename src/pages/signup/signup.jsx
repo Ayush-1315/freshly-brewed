@@ -4,6 +4,7 @@ import { useNavigate } from "react-router";
 import { SignupForm } from "../../components/signup/signup"
 
 export const Signup=()=>{
+    document.title="LeanPrep | Sign Up"
     const [signUpData,setSignUpData]=useState(null);
     const navigate=useNavigate();
     const onSubmit=(data)=>{
